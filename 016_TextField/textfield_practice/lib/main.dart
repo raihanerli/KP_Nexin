@@ -25,6 +25,21 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               TextField(
+                decoration: InputDecoration(
+                  fillColor: const Color.fromARGB(118, 3, 168, 244),
+                  filled: true,
+                  icon: const Icon(Icons.abc),
+                  suffix: Container(
+                    width: 5, height: 5, color: Colors.red,
+                  ),
+                  prefixIcon: const Icon(Icons.person),
+                  // prefixText: "Name: ",
+                  // prefixStyle: TextStyle(color:  Colors.blue, fontWeight: FontWeight.w600),
+                  labelText: "Nama Lengkap",
+                  hintText: "Nama Lengkapya loh",
+                  hintStyle: const TextStyle(fontSize: 12,),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(20),)
+                ),
                 // obscureText: true, // untuk password
                 // maxLength: 5, // untuk jumlah karakter maksimal yang akan diinput
                 // maxLines: 2, // untuk jumlah baris maksimal yang disediakan ketika box telah sepenuhnya digunakan.
